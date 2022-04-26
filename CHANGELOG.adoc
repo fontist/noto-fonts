@@ -1,0 +1,18 @@
+== CHANGELOG
+
+=== v1.0
+
+First release.
+
+==== `noto-fonts-latn.zip` (Latin fonts)
+
+* https://github.com/googlefonts/noto-fonts/raw/main/hinted/ttf/NotoSans/[Noto Sans]
+* https://github.com/googlefonts/noto-fonts/raw/main/hinted/ttf/NotoSansMono/[Noto Sans Mono]
+* https://github.com/googlefonts/noto-fonts/raw/main/hinted/ttf/NotoSerif/[Noto Serif]
+* https://github.com/googlefonts/noto-emoji/blob/main/fonts/NotoColorEmoji.ttf[Noto Emoji]
+
+
+==== `noto-fonts-cjk.zip` (CJK fonts)
+
+* https://github.com/googlefonts/noto-cjk/releases/download/Sans2.004/02_NotoSansCJK-TTF-VF.zip[Noto Sans CJK (2.004) and Noto Sans Mono JP (2.004)]
+* https://github.com/googlefonts/noto-cjk/releases/download/Serif2.001/03_NotoSerifCJK-TTF-VF.zip[Noto Serif CJK (2.001)]

@@ -1,0 +1,29 @@
+= Adobe Source fonts in a package
+
+https://github.com/fontist/source-fonts/actions/workflows/ubuntu.yml[image:https://github.com/fontist/source-fonts/actions/workflows/ubuntu.yml/badge.svg[]]
+https://github.com/fontist/source-fonts/actions/workflows/release.yml[image:https://github.com/fontist/source-fonts/actions/workflows/release.yml/badge.svg[]]
+
+== Purpose
+
+This repository is used to produce a single package for Adobe Source fonts.
+
+== Contents
+
+There are two packages:
+
+`source-fonts-latn-{version}.zip` includes the Latn/Cyrl fonts:
+
+* https://github.com/adobe-fonts/source-sans-pro[Adobe Source Sans Pro]
+* https://github.com/adobe-fonts/source-serif-pro[Adobe Source Serif Pro]
+* https://github.com/adobe-fonts/source-code-pro[Adobe Source Code Pro]
+
+`source-fonts-cjk-{version}.zip` includes the same fonts but supporting all
+flavors of CJK:
+
+* https://github.com/adobe-fonts/source-han-sans[Adobe Source Han Sans]
+* https://github.com/adobe-fonts/source-han-serif[Adobe Source Han Serif]
+* https://github.com/adobe-fonts/source-han-mono[Adobe Source Han Mono]
+
+=== Font versions
+
+See link:CHANGELOG.adoc[]
