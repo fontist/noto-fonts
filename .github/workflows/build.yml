@@ -34,7 +34,8 @@ jobs:
           name: noto-fonts
           path: |
             noto-fonts-latn.zip
-            noto-fonts-cjk.zip
+            noto-fonts-cjk-vf.zip
+            noto-fonts-cjk-static.zip
           retention-days: 1
 
   release:
@@ -59,7 +60,8 @@ jobs:
       - name: Rename artifact
         run: |
           mv noto-fonts-latn.zip noto-fonts-latn-${{ steps.get_version.outputs.VERSION }}.zip
-          mv noto-fonts-cjk.zip noto-fonts-cjk-${{ steps.get_version.outputs.VERSION }}.zip
+          mv noto-fonts-cjk-static.zip noto-fonts-cjk-static-${{ steps.get_version.outputs.VERSION }}.zip
+          mv noto-fonts-cjk-vf.zip noto-fonts-cjk-vf-${{ steps.get_version.outputs.VERSION }}.zip
 
       - name: Upload Release Asset
         id: upload-release-asset
