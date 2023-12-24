@@ -146,17 +146,17 @@ fonts-%:
 
 fonts-latn/NotoSans-%: .archive/noto-sans.zip | fonts-latn
 	mkdir -p tmp/noto-sans; \
-	unzip -j $< '*$(notdir $@)' -d tmp/noto-sans ; \
+	unzip -j -o $< '*$(notdir $@)' -d tmp/noto-sans ; \
 	cp tmp/noto-sans/$(notdir $@) $@
 
 fonts-latn/NotoSansMono-%: .archive/noto-sans-mono.zip | fonts-latn
 	mkdir -p tmp/noto-sans-mono; \
-	unzip -j $< '*$(notdir $@)' -d tmp/noto-sans-mono ; \
+	unzip -j -o $< '*$(notdir $@)' -d tmp/noto-sans-mono ; \
 	cp tmp/noto-sans-mono/$(notdir $@) $@
 
 fonts-latn/NotoSerif-%: .archive/noto-serif.zip | fonts-latn
 	mkdir -p tmp/noto-serif; \
-	unzip -j $< '*$(notdir $@)' -d tmp/noto-serif ; \
+	unzip -j -o $< '*$(notdir $@)' -d tmp/noto-serif ; \
 	cp tmp/noto-serif/$(notdir $@) $@
 
 fonts-latn/NotoColorEmoji.ttf: fonts-latn
@@ -164,47 +164,47 @@ fonts-latn/NotoColorEmoji.ttf: fonts-latn
 
 fonts-cjk-vf/NotoSansCJK-VF.ttf.ttc fonts-cjk-vf/NotoSansMonoCJKjp-VF.ttf: .archive/noto-sans-cjk-vf.zip | fonts-cjk-vf
 	mkdir -p tmp/noto-sans-cjk; \
-	unzip -j $< '*$(notdir $@)' -d tmp/noto-sans-cjk ; \
+	unzip -j -o $< '*$(notdir $@)' -d tmp/noto-sans-cjk ; \
 	cp tmp/noto-sans-cjk/$(notdir $@) $@
 
 fonts-cjk-vf/NotoSerifCJK-VF.ttf.ttc: .archive/noto-serif-cjk-vf.zip | fonts-cjk-vf
 	mkdir -p tmp/noto-serif-cjk; \
-	unzip -j $< '*$(notdir $@)' -d tmp/noto-serif-cjk ; \
+	unzip -j -o $< '*$(notdir $@)' -d tmp/noto-serif-cjk ; \
 	cp tmp/noto-serif-cjk/$(notdir $@) $@
 
 $(addprefix fonts-cjk-static/,$(CJK_STATIC_SANS)): .archive/noto-sans-cjk-static.zip | fonts-cjk-static
 	mkdir -p tmp/noto-sans-cjk-static; \
-	unzip -j $< '*$(notdir $@)' -d tmp/noto-sans-cjk-static ; \
+	unzip -j -o $< '*$(notdir $@)' -d tmp/noto-sans-cjk-static ; \
 	cp tmp/noto-sans-cjk-static/$(notdir $@) $@
 
 $(addprefix fonts-cjk-static/,$(CJK_STATIC_SERIF)): .archive/noto-serif-cjk-static.zip | fonts-cjk-static
 	mkdir -p tmp/noto-serif-cjk-static; \
-	unzip -j $< '*$(notdir $@)' -d tmp/noto-serif-cjk-static ; \
+	unzip -j -o $< '*$(notdir $@)' -d tmp/noto-serif-cjk-static ; \
 	cp tmp/noto-serif-cjk-static/$(notdir $@) $@
 
 $(addprefix fonts-cjk-static/,$(CJK_STATIC_MONO_HK)): .archive/noto-mono-cjk-static-hk.zip | fonts-cjk-static
 	mkdir -p tmp/noto-mono-cjk-static; \
-	unzip -j $< '*$(notdir $@)' -d tmp/noto-mono-cjk-static ; \
+	unzip -j -o $< '*$(notdir $@)' -d tmp/noto-mono-cjk-static ; \
 	cp tmp/noto-mono-cjk-static/$(notdir $@) $@
 
 $(addprefix fonts-cjk-static/,$(CJK_STATIC_MONO_JP)): .archive/noto-mono-cjk-static-jp.zip | fonts-cjk-static
 	mkdir -p tmp/noto-mono-cjk-static; \
-	unzip -j $< '*$(notdir $@)' -d tmp/noto-mono-cjk-static ; \
+	unzip -j -o $< '*$(notdir $@)' -d tmp/noto-mono-cjk-static ; \
 	cp tmp/noto-mono-cjk-static/$(notdir $@) $@
 
 $(addprefix fonts-cjk-static/,$(CJK_STATIC_MONO_KR)): .archive/noto-mono-cjk-static-kr.zip | fonts-cjk-static
 	mkdir -p tmp/noto-mono-cjk-static; \
-	unzip -j $< '*$(notdir $@)' -d tmp/noto-mono-cjk-static ; \
+	unzip -j -o $< '*$(notdir $@)' -d tmp/noto-mono-cjk-static ; \
 	cp tmp/noto-mono-cjk-static/$(notdir $@) $@
 
 $(addprefix fonts-cjk-static/,$(CJK_STATIC_MONO_SC)): .archive/noto-mono-cjk-static-sc.zip | fonts-cjk-static
 	mkdir -p tmp/noto-mono-cjk-static; \
-	unzip -j $< '*$(notdir $@)' -d tmp/noto-mono-cjk-static ; \
+	unzip -j -o $< '*$(notdir $@)' -d tmp/noto-mono-cjk-static ; \
 	cp tmp/noto-mono-cjk-static/$(notdir $@) $@
 
 $(addprefix fonts-cjk-static/,$(CJK_STATIC_MONO_TC)): .archive/noto-mono-cjk-static-tc.zip | fonts-cjk-static
 	mkdir -p tmp/noto-mono-cjk-static; \
-	unzip -j $< '*$(notdir $@)' -d tmp/noto-mono-cjk-static ; \
+	unzip -j -o $< '*$(notdir $@)' -d tmp/noto-mono-cjk-static ; \
 	cp tmp/noto-mono-cjk-static/$(notdir $@) $@
 
 
