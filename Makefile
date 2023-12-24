@@ -160,7 +160,7 @@ fonts-latn/NotoSerif-%: .archive/noto-serif.zip | fonts-latn
 	cp tmp/noto-serif/$(notdir $@) $@
 
 fonts-latn/NotoColorEmoji.ttf: fonts-latn
-	curl -ssL -o $@ https://github.com/notofonts/noto-emoji/blob/main/fonts/NotoColorEmoji.ttf
+	curl -ssL -o $@ https://github.com/googlefonts/noto-emoji/raw/d79d23e6822e0f6e5731b114cbfb26b2a4e380da/fonts/NotoColorEmoji.ttf
 
 fonts-cjk-vf/NotoSansCJK-VF.ttf.ttc fonts-cjk-vf/NotoSansMonoCJKjp-VF.ttf: .archive/noto-sans-cjk-vf.zip | fonts-cjk-vf
 	mkdir -p tmp/noto-sans-cjk; \
