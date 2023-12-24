@@ -144,17 +144,23 @@ noto-fonts-cjk-static.zip: $(FONTS_CJK_STATIC)
 fonts-%:
 	mkdir -p $(subst /,$(PATHSEP),$@)
 
-fonts-latn/NotoSans-%: | fonts-latn
-	curl -ssL -o $@ https://github.com/googlefonts/noto-fonts/raw/main/hinted/ttf/NotoSans/$(notdir $@)
+fonts-latn/NotoSans-%: .archive/noto-sans.zip | fonts-latn
+	mkdir -p tmp/noto-sans; \
+	unzip -j $< '*$(notdir $@)' -d tmp/noto-sans ; \
+	cp tmp/noto-sans/$(notdir $@) $@
 
-fonts-latn/NotoSansMono-%: | fonts-latn
-	curl -ssL -o $@ https://github.com/googlefonts/noto-fonts/raw/main/hinted/ttf/NotoSansMono/$(notdir $@)
+fonts-latn/NotoSansMono-%: .archive/noto-sans-mono.zip | fonts-latn
+	mkdir -p tmp/noto-sans-mono; \
+	unzip -j $< '*$(notdir $@)' -d tmp/noto-sans-mono ; \
+	cp tmp/noto-sans-mono/$(notdir $@) $@
 
-fonts-latn/NotoSerif-%: | fonts-latn
-	curl -ssL -o $@	https://github.com/googlefonts/noto-fonts/raw/main/hinted/ttf/NotoSerif/$(notdir $@)
+fonts-latn/NotoSerif-%: .archive/noto-serif.zip | fonts-latn
+	mkdir -p tmp/noto-serif; \
+	unzip -j $< '*$(notdir $@)' -d tmp/noto-serif ; \
+	cp tmp/noto-serif/$(notdir $@) $@
 
 fonts-latn/NotoColorEmoji.ttf: fonts-latn
-	curl -ssL -o $@ https://github.com/googlefonts/noto-emoji/blob/main/fonts/NotoColorEmoji.ttf
+	curl -ssL -o $@ https://github.com/notofonts/noto-emoji/blob/main/fonts/NotoColorEmoji.ttf
 
 fonts-cjk-vf/NotoSansCJK-VF.ttf.ttc fonts-cjk-vf/NotoSansMonoCJKjp-VF.ttf: .archive/noto-sans-cjk-vf.zip | fonts-cjk-vf
 	mkdir -p tmp/noto-sans-cjk; \
@@ -208,17 +214,26 @@ tmp:
 .archive:
 	mkdir -p $@
 
+.archive/noto-sans.zip: | .archive
+	curl -ssL -o $@ https://github.com/notofonts/latin-greek-cyrillic/releases/download/NotoSans-v2.013/NotoSans-v2.013.zip
+
+.archive/noto-sans-mono.zip: | .archive
+	curl -ssL -o $@ https://github.com/notofonts/latin-greek-cyrillic/releases/download/NotoSansMono-v2.014/NotoSansMono-v2.014.zip
+
+.archive/noto-serif.zip: | .archive
+	curl -ssL -o $@ https://github.com/notofonts/latin-greek-cyrillic/releases/download/NotoSerif-v2.013/NotoSerif-v2.013.zip
+
 .archive/noto-sans-cjk-vf.zip: | .archive
 	curl -ssL -o $@ https://github.com/googlefonts/noto-cjk/releases/download/Sans2.004/02_NotoSansCJK-TTF-VF.zip
 
 .archive/noto-serif-cjk-vf.zip: | .archive
-	curl -ssL -o $@ https://github.com/googlefonts/noto-cjk/releases/download/Serif2.001/03_NotoSerifCJK-TTF-VF.zip
+	curl -ssL -o $@ https://github.com/notofonts/noto-cjk/releases/download/Serif2.002/03_NotoSerifCJK-TTF-VF.zip
 
 .archive/noto-sans-cjk-static.zip: | .archive
 	curl -ssL -o $@ https://github.com/googlefonts/noto-cjk/releases/download/Sans2.004/05_NotoSansCJK-SubsetOTF.zip
 
 .archive/noto-serif-cjk-static.zip: | .archive
-	curl -ssL -o $@ https://github.com/googlefonts/noto-cjk/releases/download/Serif2.001/06_NotoSerifCJKSubsetOTF.zip
+	curl -ssL -o $@ https://github.com/notofonts/noto-cjk/releases/download/Serif2.002/06_NotoSerifCJKSubsetOTF.zip
 
 .archive/noto-mono-cjk-static-hk.zip: | .archive
 	curl -ssL -o $@ https://github.com/googlefonts/noto-cjk/releases/download/Sans2.004/15_NotoSansMonoCJKhk.zip
