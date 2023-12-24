@@ -224,31 +224,31 @@ tmp:
 	curl -ssL -o $@ https://github.com/notofonts/latin-greek-cyrillic/releases/download/NotoSerif-v2.013/NotoSerif-v2.013.zip
 
 .archive/noto-sans-cjk-vf.zip: | .archive
-	curl -ssL -o $@ https://github.com/googlefonts/noto-cjk/releases/download/Sans2.004/02_NotoSansCJK-TTF-VF.zip
+	curl -ssL -o $@ https://github.com/notofonts/noto-cjk/releases/download/Sans2.004/02_NotoSansCJK-TTF-VF.zip
 
 .archive/noto-serif-cjk-vf.zip: | .archive
 	curl -ssL -o $@ https://github.com/notofonts/noto-cjk/releases/download/Serif2.002/03_NotoSerifCJK-TTF-VF.zip
 
 .archive/noto-sans-cjk-static.zip: | .archive
-	curl -ssL -o $@ https://github.com/googlefonts/noto-cjk/releases/download/Sans2.004/05_NotoSansCJK-SubsetOTF.zip
+	curl -ssL -o $@ https://github.com/notofonts/noto-cjk/releases/download/Sans2.004/05_NotoSansCJK-SubsetOTF.zip
 
 .archive/noto-serif-cjk-static.zip: | .archive
 	curl -ssL -o $@ https://github.com/notofonts/noto-cjk/releases/download/Serif2.002/06_NotoSerifCJKSubsetOTF.zip
 
 .archive/noto-mono-cjk-static-hk.zip: | .archive
-	curl -ssL -o $@ https://github.com/googlefonts/noto-cjk/releases/download/Sans2.004/15_NotoSansMonoCJKhk.zip
+	curl -ssL -o $@ https://github.com/notofonts/noto-cjk/releases/download/Sans2.004/15_NotoSansMonoCJKhk.zip
 
 .archive/noto-mono-cjk-static-jp.zip: | .archive
-	curl -ssL -o $@ https://github.com/googlefonts/noto-cjk/releases/download/Sans2.004/11_NotoSansMonoCJKjp.zip
+	curl -ssL -o $@ https://github.com/notofonts/noto-cjk/releases/download/Sans2.004/11_NotoSansMonoCJKjp.zip
 
 .archive/noto-mono-cjk-static-kr.zip: | .archive
-	curl -ssL -o $@ https://github.com/googlefonts/noto-cjk/releases/download/Sans2.004/12_NotoSansMonoCJKkr.zip
+	curl -ssL -o $@ https://github.com/notofonts/noto-cjk/releases/download/Sans2.004/12_NotoSansMonoCJKkr.zip
 
 .archive/noto-mono-cjk-static-sc.zip: | .archive
-	curl -ssL -o $@ https://github.com/googlefonts/noto-cjk/releases/download/Sans2.004/13_NotoSansMonoCJKsc.zip
+	curl -ssL -o $@ https://github.com/notofonts/noto-cjk/releases/download/Sans2.004/13_NotoSansMonoCJKsc.zip
 
 .archive/noto-mono-cjk-static-tc.zip: | .archive
-	curl -ssL -o $@ https://github.com/googlefonts/noto-cjk/releases/download/Sans2.004/14_NotoSansMonoCJKtc.zip
+	curl -ssL -o $@ https://github.com/notofonts/noto-cjk/releases/download/Sans2.004/14_NotoSansMonoCJKtc.zip
 
 # version:
 # 	echo "${JAR_VERSION}"
