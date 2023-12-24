@@ -10,6 +10,8 @@ This repository is used to produce a single package for Adobe Source fonts.
 
 There are two packages:
 
+The latest version is 1.2.
+
 `noto-fonts-latn-{version}.zip` includes the Latn/Cyrl fonts:
 
 * https://github.com/googlefonts/noto-fonts/[Noto Sans (2.013)]
