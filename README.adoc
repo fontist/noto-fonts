@@ -12,16 +12,16 @@ There are two packages:
 
 `noto-fonts-latn-{version}.zip` includes the Latn/Cyrl fonts:
 
-* https://github.com/googlefonts/noto-fonts/[Noto Sans]
-* https://github.com/googlefonts/noto-fonts/[Noto Sans Mono]
-* https://github.com/googlefonts/noto-fonts/[Noto Serif]
-* https://github.com/googlefonts/noto-emoji/[Noto Emoji]
+* https://github.com/googlefonts/noto-fonts/[Noto Sans (2.013)]
+* https://github.com/googlefonts/noto-fonts/[Noto Sans Mono (2.014)]
+* https://github.com/googlefonts/noto-fonts/[Noto Serif (2.013)]
+* https://github.com/googlefonts/noto-emoji/[Noto Emoji (2.042)]
 
 `noto-fonts-cjk-{version}.zip` includes the same fonts but supporting all
 flavors of CJK:
 
 * https://github.com/googlefonts/noto-cjk/[Noto Sans CJK (2.004) and Noto Sans Mono JP]
-* https://github.com/googlefonts/noto-cjk/[Noto Serif CJK (2.001)]
+* https://github.com/googlefonts/noto-cjk/[Noto Serif CJK (2.002)]
 
 === Font versions
 
